@@ -96,5 +96,9 @@ class Welcome extends CI_Controller {
 				 }
 
 	}
+	public function demo()
+	{
+		$this->load->view('demo');
+	}
 
 }

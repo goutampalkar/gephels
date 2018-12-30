@@ -1,0 +1,53 @@
+span {
+  padding: 0 30px 0 50px;
+  color: #999;
+  height: 0 px;
+  transition: 0.28s;
+  display: none;
+  overflow: hidden;
+  color: red;
+  font-style: italic; }
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+  background: #eee; }
+  form input[type="text"]:focus:valid,
+  form input[type="email"]:focus:valid {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px; }
+    form input[type="text"]:focus:valid + label,
+    form input[type="email"]:focus:valid + label {
+      opacity: 0; }
+  form input[type="text"]:focus:invalid,
+  form input[type="email"]:focus:invalid {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border: 1px solid #5AB0DB;
+    border-radius: 10px;
+    background: url(https://images.all-free-download.com/images/graphiclarge/red_x_cross_wrong_not_clip_art_9830.jpg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px; }
+    form input[type="text"]:focus:invalid ~ span,
+    form input[type="email"]:focus:invalid ~ span {
+      transition: 0.5s;
+      display: block;
+      max-height: 100px;
+      padding: 0 3px 2px 50px; }
+  form input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+  form input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+    background: pink; }
+    form input[type="text"]:invalid:not(:focus):not(:placeholder-shown) ~ span,
+    form input[type="email"]:invalid:not(:focus):not(:placeholder-shown) ~ span {
+      transition: 0.5s;
+      display: block;
+      max-height: 100px;
+      padding: 0 3px 2px 50px; }
+      
+
+/*# sourceMappingURL=validationSheet.css.map */

@@ -15,7 +15,7 @@ class Demo extends CI_Model {
     	$result +=$this->_createCost();
     	$result +=$this->_createPackage();
     	$result +=$this->_createRegister();
-    	retrun $result;
+    	return $result;
 
     }
 
